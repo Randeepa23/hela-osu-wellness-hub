@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom Ayurvedic colors
+        ayur: {
+          sage: "hsl(var(--ayur-sage))",
+          gold: "hsl(var(--ayur-gold))",
+          cream: "hsl(var(--ayur-cream))",
+          earth: "hsl(var(--ayur-earth))",
+          "deep-green": "hsl(var(--ayur-deep-green))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
