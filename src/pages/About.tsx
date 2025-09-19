@@ -1,6 +1,7 @@
 import { Award, Users, MapPin, Target, Heart, Leaf } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import ayurBackground1 from '@/assets/ayur-background-1.jpg';
 
 const About = () => {
   const values = [
@@ -37,10 +38,15 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-ayur-cream via-secondary/30 to-background">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url(${ayurBackground1})` }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-ayur-cream/60 to-secondary/40"></div>
+        <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
+            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 backdrop-blur-sm">
               <Leaf className="w-4 h-4 mr-2" />
               Our Story
             </Badge>

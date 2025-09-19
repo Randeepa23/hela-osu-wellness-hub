@@ -1,6 +1,7 @@
 import { Factory, Leaf, Shield, Users, CheckCircle, Award } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import ayurBackground2 from '@/assets/ayur-background-2.jpg';
 
 const Manufacturing = () => {
   const processes = [
@@ -162,8 +163,13 @@ const Manufacturing = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${ayurBackground2})` }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-secondary/60"></div>
+        <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               Quality Certifications & Standards
@@ -176,7 +182,7 @@ const Manufacturing = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {certifications.map((cert, index) => (
-              <Card key={index} className="text-center border-2 border-ayur-gold/20 hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="text-center border-2 border-ayur-gold/20 hover:shadow-lg transition-all duration-300 backdrop-blur-sm bg-card/80">
                 <CardContent className="p-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-ayur-gold to-accent rounded-full flex items-center justify-center mx-auto mb-4">
                     <Shield className="w-8 h-8 text-accent-foreground" />
