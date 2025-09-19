@@ -44,16 +44,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center">
             <img 
               src={shgLogo} 
               alt="S.H.G. Hela Osu - Ayurvedic Products" 
               className="h-12 w-auto object-contain"
             />
-            <div className="hidden sm:block">
-              <h1 className="font-bold text-lg text-primary">Hela Osu</h1>
-              <p className="text-xs text-muted-foreground">Ayurvedic Products</p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
