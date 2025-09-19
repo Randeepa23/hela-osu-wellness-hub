@@ -21,25 +21,6 @@ const Header = () => {
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      {/* Top bar */}
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1">
-              <Phone className="w-4 h-4" />
-              <span>Hotline: +94 11 123 4567</span>
-            </div>
-            <div className="hidden md:flex items-center gap-1">
-              <MapPin className="w-4 h-4" />
-              <span>Head Office: Borelasgamuwa</span>
-            </div>
-          </div>
-          <div className="text-xs">
-            19+ Years of Trust | 8+ Outlets | 100+ Employees
-          </div>
-        </div>
-      </div>
-
       {/* Main header */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
